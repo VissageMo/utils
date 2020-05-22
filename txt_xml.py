@@ -70,7 +70,7 @@ def main():
     for image in os.listdir(image_dir):
         img = Image.open(image_dir+image) # 若图像数据是“png”转换成“.png”即可    
         image_id = image.split('.')[0]
-        txt_name =  image_id+ '-v1.5hhb.txt'
+        txt_name =  image_id+ '-v1.5.txt'
         fin = open(annotations_dir+txt_name, 'r')
         xml_name = xml_dir+image_id+'.xml'
 
